@@ -1,0 +1,1085 @@
+@font-face {
+    font-family: "Montserrat";
+    src: url("../fonts/Montserrat-Regular.ttf");
+}
+
+@font-face {
+    font-family: "MontserratMedium";
+    src: url("../fonts/Montserrat-Medium.ttf");
+}
+
+@font-face {
+    font-family: "MontserratSemiBold";
+    src: url("../fonts/Montserrat-SemiBold.ttf");
+}
+
+@font-face {
+    font-family: "Muller";
+    src: url("../fonts/MullerRegular.ttf");
+}
+
+@font-face {
+    font-family: "AcquestScript";
+    src: url("../fonts/acquestscript.ttf");
+}
+
+body {
+    margin: 0;
+    background: white;
+    font-family: "Montserrat", serif;
+    position: relative;
+}
+
+#main {
+    max-width: 1350px;
+    margin: 0 auto;
+    background: url("../img/iceberg.png") no-repeat;
+    background-position: right -55px top 55px;
+    background-position-y: center;
+}
+
+#header {
+    max-width: 1110px;
+    margin: 35px auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+}
+
+.logo img {
+    margin-right: 11px;
+}
+
+.logo a {
+    display: flex;
+    align-items: center;
+    font-size: 15px;
+    color: rgb(44, 44, 44);
+    line-height: 1.4;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.menu a {
+    font-size: 15px;
+    box-sizing: border-box;
+    color: rgb(44, 44, 44);
+    line-height: 1.4;
+    margin-left: 50px;
+    text-decoration: none;
+}
+
+.menu a:hover {
+    font-weight: bold;
+}
+
+#main .menu .hvr-underline-from-left:before {
+    background: rgb(44, 44, 44);
+    height: 2px;
+}
+
+#titles {
+    max-width: 1110px;
+    position: relative;
+    padding-top: 111px;
+    height: 600px;
+    margin: 0 auto;
+}
+
+#titles #title-trip {
+    font-size: 60px;
+    font-family: "MontserratSemiBold", serif;
+    color: rgb(44, 44, 44);
+    margin-bottom: 37px;
+}
+
+#titles #title-trip-tour {
+    font-size: 35px;
+    font-family: "Montserrat", serif;
+    color: rgb(44, 44, 44);
+    letter-spacing: 1px;
+    margin-bottom: 60px;
+}
+
+#titles #titles-content {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1000px;
+    align-items: flex-start;
+    position: relative;
+}
+
+#titles #titles-buttons {
+    display: flex;
+    width: 520px;
+    justify-content: space-between;
+}
+
+#main .btn {
+    display: flex;
+    justify-content: space-evenly;
+    background-color: rgb(44, 44, 44);
+    align-items: center;
+    outline: 0;
+    cursor: pointer;
+    width: 220px;
+    height: 59px;
+    font-size: 16px;
+    border: 0;
+    font-family: "MontserratMedium", serif;
+    color: rgb(255, 255, 255);
+    line-height: 1.313;
+    text-decoration: none;
+}
+
+#main .show-video {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    outline: 0;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.video-text {
+    font-size: 18px;
+    color: rgb(255, 255, 255);
+    line-height: 1.056;
+    margin-left: 12px;
+}
+
+#titles #title-trip-tour span, #titles #title-trip span {
+    color: white;
+}
+
+#main .trip-line .trip-line-text {
+    font-size: 14px;
+    font-family: "MontserratMedium", serif;
+    color: rgb(44, 44, 44);
+    line-height: 1.5;
+}
+
+#titles .trip-line {
+    position: relative;
+}
+
+#titles .trip-line .data {
+    position: absolute;
+}
+
+#titles .trip-line .price {
+    position: absolute;
+    right: 140px;
+    top: -30px;
+}
+
+#titles .trip-line .places {
+    position: absolute;
+    right: -100px;
+    top: -50px;
+}
+
+#about {
+    background: #2c2c2c;
+    padding-top: 125px;
+    padding-bottom: 115px;
+}
+
+#definition {
+    max-width: 1110px;
+    position: relative;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+#definition #definition-text {
+    width: 445px;
+}
+
+.title {
+    font-size: 35px;
+    font-family: "MontserratSemiBold", serif;
+    color: rgb(255, 255, 255);
+    line-height: 0.6;
+}
+
+.text {
+    font-size: 16px;
+    color: rgb(255, 255, 255);
+    line-height: 1.438;
+}
+
+#definition #definition-text .text {
+    margin-top: 50px;
+}
+
+.white-block {
+    background: white;
+    height: 450px;
+    width: 400px;
+    z-index: -1;
+}
+
+#definition #definition-image img {
+    margin-top: 75px;
+    margin-left: 40px;
+}
+
+#reasons-container {
+    margin-top: 180px;
+    margin-bottom: 165px;
+    position: relative;
+    height: 690px;
+    background: url("../img/dotted_line_background.png") no-repeat;
+    background-position: center bottom;
+}
+
+#reasons-container .reasons-title.title {
+    line-height: 1.286;
+    text-align: center;
+    width: 570px;
+    margin: 0 auto 60px auto;
+}
+
+#reasons-container #reasons {
+    position: relative;
+    display: flex;
+    padding-top: 30px;
+    margin: 0 auto;
+    max-width: 1110px;
+    height: 570px;
+    justify-content: space-between;
+}
+
+#reasons-container #reasons .title {
+    font-size: 18px;
+    line-height: 1.167;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+#reasons-container #reasons .text {
+    font-size: 14px;
+    line-height: 1.5;
+    text-align: center;
+    margin-bottom: 35px;
+}
+
+.number-circle {
+    border-radius: 50%;
+    background-color: rgb(255, 255, 255);
+    width: 75px;
+    height: 75px;
+    font-size: 30px;
+    color: rgb(44, 44, 44);
+    margin: 0 auto 35px auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#reasons-container #reasons #reason-one {
+    text-align: center;
+    width: 240px;
+}
+
+#reasons-container #reasons #reason-two {
+    text-align: center;
+    width: 240px;
+    display: flex;
+    justify-content: end;
+    flex-direction: column;
+}
+
+#reasons-container #reasons #reason-three {
+    text-align: center;
+    width: 240px;
+}
+
+#reasons-container #reasons #reason-four {
+    text-align: center;
+    width: 240px;
+    display: flex;
+    justify-content: end;
+    flex-direction: column;
+}
+
+#uniq-places {
+    max-width: 1110px;
+    margin: 0 auto;
+}
+
+#uniq-places .title.title-uniq {
+    font-size: 35px;
+    line-height: 1;
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+#uniq-places #uniq-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#uniq-places #uniq-container #map {
+    position: relative;
+}
+
+#uniq-places #uniq-container #map img {
+    width: 100%;
+    height: 100%;
+}
+
+#uniq-places #uniq-container #map #map-name {
+    font-size: 30px;
+    font-family: "AcquestScript", serif;
+    color: rgb(44, 44, 44);
+    line-height: 1.333;
+    position: absolute;
+    top: 250px;
+    left: 270px;
+}
+
+#uniq-places #uniq-container #laguna {
+    width: 445px;
+}
+
+#uniq-places #uniq-container #laguna #laguna-text .title {
+    font-size: 20px;
+    line-height: 1.05;
+    margin-bottom: 25px;
+}
+
+#uniq-places #uniq-container #laguna #laguna-text .text {
+    font-size: 16px;
+    margin-bottom: 25px;
+}
+
+#uniq-places #uniq-container #laguna #laguna-image .white-block {
+    height: 325px;
+    width: 335px;
+    margin-left: auto;
+}
+
+#uniq-places #uniq-container #laguna #laguna-image .white-block img {
+    margin-top: 35px;
+    margin-left: -110px;
+}
+
+#video-block {
+    height: 700px;
+}
+
+#video-container {
+    background: url("../img/mountain.png") no-repeat;
+    background-position: center bottom;
+    background-size: cover;
+    height: 700px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#youtube-video {
+    display: none;
+    width: 100%;
+    height: 100%;
+}
+
+#video-container #video {
+    cursor: pointer;
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 315px;
+}
+
+#video-container #video .video-text {
+    line-height: 1.278;
+    margin-left: 20px;
+}
+
+#program-block {
+    background: #2c2c2c;
+    padding: 125px 20px 90px 20px;
+    position: relative;
+}
+
+#program #program-container {
+    position: relative;
+}
+
+#program #program-container .program {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    position: relative;
+}
+
+#program {
+    max-width: 1110px;
+    margin: 0 auto 180px auto;
+    position: relative;
+}
+
+#program .program-title {
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+#program #program-container .program img {
+    width: 400px;
+    height: 380px;
+    margin-top: 35px;
+    margin-left: 70px;
+}
+
+#program #program-container .program .program-text {
+    width: 475px;
+    position: relative;
+}
+
+#program #program-container .program .program-text .data {
+    font-size: 25px;
+    font-family: "MontserratSemiBold", serif;
+    color: rgb(255, 255, 255);
+    line-height: 0.84;
+    margin-bottom: 52px;
+}
+
+#program #program-container .program .program-text .data span {
+    font-size: 14px;
+    color: #a4a4a4;
+}
+
+#program #program-container .program .program-text .title {
+    font-size: 20px;
+    line-height: 1.05;
+}
+
+#program #program-container .program .program-text .text {
+    height: 175px;
+}
+
+#program-block #program .program .document {
+    display: flex;
+    outline: 0;
+    cursor: pointer;
+    margin-top: 52px;
+    position: relative;
+}
+
+#program-block #program .program .document img {
+    width: 20px;
+    height: 20px;
+    margin: 0;
+}
+
+#program-block #program .program .document .document-text {
+    font-size: 16px;
+    font-family: "Montserrat", serif;
+    color: rgb(255, 255, 255);
+    text-decoration: underline;
+    line-height: 1.313;
+    margin-left: 14px;
+    position: relative;
+}
+
+#program-block #program .program .btn-border {
+    display: flex;
+    align-items: center;
+    margin-top: 52px;
+    position: relative;
+}
+
+#program-block .border {
+    border: 1px solid rgb(255, 255, 255);
+    width: 46px;
+    height: 46px;
+    margin-right: 21px;
+    position: relative;
+}
+
+#program .slick-prev:before {
+    content: url("../img/left.png");
+}
+
+#program .slick-prev {
+    left: unset;
+    top: 352px;
+    right: 442px;
+    z-index: 2;
+}
+
+#program .slick-next:before {
+    content: url("../img/right.png");
+}
+
+#program .slick-next {
+    top: 352px;
+    right: 373px;
+}
+
+#reviews {
+    max-width: 1110px;
+    margin: 0 auto;
+    position: relative;
+}
+
+#program-block #reviews .reviews-title {
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+#reviews-container {
+    background-color: rgb(255, 255, 255);
+    padding: 55px;
+    position: relative;
+    margin-bottom: 180px;
+}
+
+#reviews #reviews-container .review {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+}
+
+#program-block #reviews #reviews-container .review .reviews-text {
+    width: 450px;
+}
+
+#program-block #reviews #reviews-container .review .title {
+    font-size: 16px;
+    color: rgb(44, 44, 44);
+    line-height: 1.188;
+    margin-bottom: 36px;
+}
+
+#program-block #reviews #reviews-container .review .title:first-child {
+    font-size: 20px;
+    line-height: 0.95;
+    margin-bottom: 24px;
+}
+
+#program-block #reviews #reviews-container .review .text {
+    font-size: 16px;
+    color: rgb(44, 44, 44);
+    line-height: 1.438;
+}
+
+#reviews #reviews-container .review .btn-border {
+    display: flex;
+    align-items: center;
+    margin-top: 120px;
+}
+
+#reviews .border {
+    border: 1px solid rgb(44, 44, 44);
+    margin-right: 6px;
+}
+
+#reviews #reviews-container .review .review-image img {
+    width: 400px;
+    height: 400px;
+}
+
+#reviews .slick-prev:before {
+    content: url("../img/left2.png");
+}
+
+#reviews .slick-prev {
+    top: 431px;
+    left: 70px;
+    z-index: 3;
+}
+
+#reviews .slick-next:before {
+    content: url("../img/right2.png");
+}
+
+#reviews .slick-next {
+    top: 431px;
+    left: 123px;
+}
+
+#photo-gallery {
+    max-width: 1110px;
+    margin: 0 auto;
+    position: relative;
+}
+
+#program-block #photo-gallery .photo-title {
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+#photo-gallery #photo-container {
+    position: relative;
+}
+
+#photo-gallery #second-photo-container {
+    position: relative;
+    margin: 0 auto;
+    display: none;
+}
+
+#photo-gallery #second-photo-container .pics {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#photo-gallery #second-photo-container .pics .picture {
+    width: 290px;
+    height: 255px;
+}
+
+#photo-gallery #second-photo-container .pics .picture img {
+    width: 100%;
+    height: 100%;
+}
+
+#photo-gallery #photo-container .photos {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+}
+
+#photo-gallery #photo-container .photos .block {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+}
+
+#photo-gallery #photo-container .photos .block-2 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 35px;
+    position: relative;
+}
+
+#photo-gallery #photo-container .photos .block-2 .second-pic {
+    margin-right: 40px;
+    margin-top: -47px;
+}
+
+#photo-gallery #photo-container .photos .block .third-pic {
+    margin-right: 40px;
+}
+
+#photo-gallery #photo-container .photos .first-pic img {
+    width: 328px;
+    height: 290px;
+}
+
+#photo-gallery #photo-container .photos .second-pic img {
+    width: 147px;
+    height: 126px;
+}
+
+#photo-gallery #photo-container .photos .third-pic img {
+    width: 298px;
+    height: 145px;
+}
+
+#photo-gallery #photo-container .photos .forth-pic img {
+    width: 208px;
+    height: 145px;
+}
+
+#photo-gallery #photo-container .photos .fifth-pic img {
+    width: 285px;
+    height: 380px;
+}
+
+#photo-gallery .slick-prev:before {
+    content: url("../img/prev.png");
+}
+
+#photo-gallery .slick-next:before {
+    content: url("../img/next.png");
+}
+
+#photo-gallery .slick-dots li button {
+    width: 10px;
+    height: 10px;
+    margin: 5px auto 0 auto;
+    padding: 0;
+    border: 1px solid white;
+    border-radius: 50%;
+}
+
+#photo-gallery .slick-prev {
+    top: unset;
+    left: unset;
+    right: 54%;
+    bottom: -33px;
+}
+
+#photo-gallery .slick-next {
+    top: unset;
+    left: unset;
+    right: 44%;
+    bottom: -33px;
+}
+
+#photo-gallery .slick-dots li.slick-active button:before {
+    opacity: 1;
+    color: white;
+}
+
+#photo-gallery .slick-dots li button:before {
+    font-size: 10px;
+    line-height: 22px;
+    opacity: 0;
+}
+
+#order {
+    background: url("../img/zakaz.png") no-repeat;
+    background-position: center top;
+    background-size: cover;
+    padding-top: 85px;
+    padding-bottom: 125px;
+}
+
+#order #order-container {
+    margin: 0 auto;
+    max-width: 1110px;
+}
+
+#order #order-container .title {
+    text-align: center;
+    margin-bottom: 60px;
+    line-height: 1;
+}
+
+#order #order-container #reservation-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    flex-direction: column;
+    margin: 0 auto;
+}
+
+#order #order-container #reservation-content #reserve #reserve-title {
+    font-size: 16px;
+    font-family: "Muller", serif;
+    color: rgb(255, 255, 255);
+    line-height: 1.2;
+    margin-bottom: 20px;
+}
+
+#order #order-container #reservation-content #reserve #people-amount {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+#order #order-container #reserve .form-radio-btn input {
+    display: none;
+}
+
+#order #order-container #reserve .form-radio-btn label {
+    display: flex;
+    cursor: pointer;
+    color: rgb(255, 255, 255);
+    font-size: 20px;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid white;
+    user-select: none;
+    width: 34px;
+    height: 34px;
+}
+
+#order #order-container #reserve .form-radio-btn:hover label {
+    background: white;
+    color: black;
+}
+
+#order #order-container #reserve .form-radio-btn input:checked + label {
+    background: white;
+    color: black;
+}
+
+#order #order-container #reserve .reserve-input input {
+    width: 334px;
+    background: transparent;
+    font-size: 16px;
+    color: rgb(255, 255, 255);
+    line-height: 1.2;
+    padding: 18px 0 20px 17px;
+    margin-top: 20px;
+    border: 1px solid rgb(255, 255, 255);
+    box-sizing: border-box;
+}
+
+#order #order-container #reservation-content #reserve-button button {
+    font-family: "MontserratMedium", serif;
+    color: rgb(44, 44, 44);
+    font-size: 16px;
+    padding: 18px 0;
+    background-color: rgb(255, 255, 255);
+    border: 0;
+    box-sizing: border-box;
+    width: 336px;
+    margin-top: 20px;
+    cursor: pointer;
+}
+
+#order #order-container #reservation-content #reserve-button button:hover {
+    background-color: rgba(255, 255, 255, 0.85);
+}
+
+#order #order-container #reserve .reserve-input input::placeholder {
+    font-size: 16px;
+    color: rgb(255, 255, 255);
+    line-height: 1.2;
+}
+
+#reservation-content .error-input {
+    color: red;
+    font-size: 16px;
+    margin-top: 5px;
+    font-family: "Muller", serif;
+    display: none;
+}
+
+#reservation-sent {
+    margin: 0 auto;
+    position: fixed;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    background: rgba(0, 0, 0, 0.75);
+    z-index: 9999;
+}
+
+#reservation-sent #reservation {
+    margin: 0 auto;
+    position: relative;
+    background: white;
+    width: 334px;
+}
+
+#reservation-sent #reservation #reply-image {
+    margin-top: 55px;
+    border-bottom: 1px solid black;
+    position: relative;
+}
+
+#reservation-sent #reservation #reply-image img {
+    position: absolute;
+    bottom: -18px;
+    left: calc(50% - 18px);
+}
+
+#reservation-sent #reservation #reply-content {
+    margin: 74px 10px 45px 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+#reservation-sent #reservation #reservation-cancel {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+}
+
+#reservation-sent #reservation #reply-content .title:first-child {
+    font-size: 25px;
+    line-height: 0.84;
+    font-family: "MontserratSemiBold", serif;
+    margin-bottom: 30px;
+}
+
+#reservation-sent #reservation #reply-content .title {
+    font-size: 14px;
+    font-family: "Montserrat", serif;
+    color: rgb(44, 44, 44);
+    line-height: 1.5;
+    text-align: center;
+    margin-bottom: 47px;
+}
+
+#reservation-sent #reservation #reply-content #close-button {
+    margin: 0 auto;
+}
+
+#reservation-sent #reservation #reply-content #close-button .btn {
+    background-color: rgb(44, 44, 44);
+    border: 0;
+    box-sizing: border-box;
+    padding-top: 17px;
+    padding-bottom: 17px;
+    width: 178px;
+    font-size: 16px;
+    color: rgb(255, 255, 255);
+    cursor: pointer;
+}
+
+#footer {
+    max-width: 1110px;
+    margin: 28px auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#footer #social-media .link {
+    margin-left: 13px;
+    margin-right: 13px;
+    text-decoration: none;
+}
+
+#footer #social-media .link:hover {
+    opacity: 90%;
+}
+
+#titles-mobile {
+    display: none;
+    margin: 0 auto;
+}
+
+#trip-mobile-block {
+    margin: 0 auto;
+}
+
+#main-mobile-block {
+    background: url("../img/iceberg.png") no-repeat;
+    background-position: center bottom;
+    background-size: cover;
+    height: 483px;
+    padding-right: 20px;
+    padding-left: 20px;
+}
+
+#titles-mobile #title-trip-mobile {
+    font-size: 40px;
+    text-align: center;
+    font-family: "MontserratSemiBold", serif;
+    color: white;
+    padding-top: 100px;
+    margin-bottom: 37px;
+}
+
+#titles-mobile #title-trip-tour-mobile {
+    font-size: 35px;
+    font-family: "Montserrat", serif;
+    color: rgb(44, 44, 44);
+    letter-spacing: 1px;
+    margin-bottom: 110px;
+    text-align: center;
+    margin-top: 80px;
+}
+
+#trip-mobile-block #button-block {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 80px;
+}
+
+#titles-mobile .show-video {
+    justify-content: center;
+}
+
+#titles-mobile .trip-line {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 100px;
+}
+
+#titles-mobile .trip-line .data {
+    position: absolute;
+    top: 125px;
+    right: calc(50% - 18px);
+}
+
+#titles-mobile .trip-line .price {
+    position: absolute;
+    right: calc(50% - 26px);
+    top: -30px;
+}
+
+#titles-mobile .trip-line .places {
+    position: absolute;
+    left: calc(50% + 108px);
+    top: -50px;
+}
+
+#program-block #program #program-container .program .day-program {
+    height: 80px;
+    margin-bottom: 25px;
+}
+
+#burger {
+    display: none;
+}
+
+#burger-menu {
+    position: fixed;
+    display: none;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    background: rgba(0, 0, 0, 0.66);
+    z-index: 9998;
+}
+
+#burger-menu #burger-menu-container {
+    margin-left: auto;
+    position: relative;
+    background: #2c2c2c;
+    width: 250px;
+}
+
+#burger-menu #burger-menu-container #menu-cancel {
+    position: absolute;
+    top: 30px;
+    left: unset;
+    right: 25px;
+    cursor: pointer;
+    z-index: 55;
+}
+
+#burger-menu #burger-menu-container .menu {
+    padding-top: 90px;
+}
+
+#burger-menu #burger-menu-container .menu a {
+    display: block;
+    color: rgb(255, 255, 255);
+    margin: 17px;
+}
+
+#burger-menu #burger-menu-container #logo-image {
+    margin-top: 50px;
+    border-top: 1px solid white;
+    height: 40px;
+}
+
+#burger-menu #burger-menu-container #logo-image img {
+    position: absolute;
+    bottom: 23px;
+    right: calc(50% - 15px);
+}
+

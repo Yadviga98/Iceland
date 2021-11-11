@@ -425,6 +425,7 @@ body {
     max-width: 1110px;
     margin: 0 auto 180px auto;
     position: relative;
+    height: 450px;
 }
 
 #program .program-title {
@@ -442,6 +443,10 @@ body {
 #program #program-container .program .program-text {
     width: 475px;
     position: relative;
+    height: 450px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
 #program #program-container .program .program-text .data {
@@ -460,6 +465,7 @@ body {
 #program #program-container .program .program-text .title {
     font-size: 20px;
     line-height: 1.05;
+    margin-bottom: 25px;
 }
 
 #program #program-container .program .program-text .text {
@@ -470,7 +476,6 @@ body {
     display: flex;
     outline: 0;
     cursor: pointer;
-    margin-top: 52px;
     position: relative;
 }
 
@@ -490,39 +495,28 @@ body {
     position: relative;
 }
 
-#program-block #program .program .btn-border {
-    display: flex;
-    align-items: center;
-    margin-top: 52px;
-    position: relative;
-}
-
-#program-block .border {
-    border: 1px solid rgb(255, 255, 255);
-    width: 46px;
-    height: 46px;
-    margin-right: 21px;
-    position: relative;
-}
-
 #program .slick-prev:before {
     content: url("../img/left.png");
-}
-
-#program .slick-prev {
-    left: unset;
-    top: 352px;
-    right: 442px;
-    z-index: 2;
+    border: 1px solid white;
+    padding: 9px 15px 15px 15px;
 }
 
 #program .slick-next:before {
     content: url("../img/right.png");
+    border: 1px solid white;
+    padding: 9px 15px 15px 15px;
+}
+
+#program .slick-prev {
+    left: unset;
+    top: 345px;
+    right: 455px;
+    z-index: 2;
 }
 
 #program .slick-next {
-    top: 352px;
-    right: 373px;
+    top: 345px;
+    right: 390px;
 }
 
 #reviews {
@@ -546,7 +540,6 @@ body {
 #reviews #reviews-container .review {
     display: flex;
     justify-content: space-between;
-    align-items: center;
     position: relative;
 }
 
@@ -591,21 +584,25 @@ body {
 
 #reviews .slick-prev:before {
     content: url("../img/left2.png");
+    border: 1px solid black;
+    padding: 9px 15px 15px 15px;
 }
 
 #reviews .slick-prev {
-    top: 431px;
-    left: 70px;
+    top: 430px;
+    left: 55px;
     z-index: 3;
 }
 
 #reviews .slick-next:before {
     content: url("../img/right2.png");
+    border: 1px solid black;
+    padding: 9px 15px 15px 15px;
 }
 
 #reviews .slick-next {
-    top: 431px;
-    left: 123px;
+    top: 430px;
+    left: 110px;
 }
 
 #photo-gallery {
@@ -711,9 +708,9 @@ body {
 }
 
 #photo-gallery .slick-dots li button {
-    width: 10px;
-    height: 10px;
-    margin: 5px auto 0 auto;
+    width: 12px;
+    height: 12px;
+    margin: 5px auto 5px auto;
     padding: 0;
     border: 1px solid white;
     border-radius: 50%;
@@ -722,15 +719,22 @@ body {
 #photo-gallery .slick-prev {
     top: unset;
     left: unset;
-    right: 54%;
+    right: 53%;
     bottom: -33px;
+    z-index: 5555;
 }
 
 #photo-gallery .slick-next {
     top: unset;
     left: unset;
-    right: 44%;
+    right: 45%;
     bottom: -33px;
+    z-index: 5554;
+}
+
+.slick-dots li, .slick-dots li button:before {
+    height: auto;
+    width: auto;
 }
 
 #photo-gallery .slick-dots li.slick-active button:before {
@@ -739,8 +743,8 @@ body {
 }
 
 #photo-gallery .slick-dots li button:before {
-    font-size: 10px;
-    line-height: 22px;
+    font-size: 12px;
+    line-height: 24px;
     opacity: 0;
 }
 
@@ -1023,11 +1027,6 @@ body {
     position: absolute;
     left: calc(50% + 108px);
     top: -50px;
-}
-
-#program-block #program #program-container .program .day-program {
-    height: 80px;
-    margin-bottom: 25px;
 }
 
 #burger {

@@ -68,32 +68,27 @@ $(document).ready(() => {
             phone.css('border-color', 'red');
             hasError = true;
         }
-
-        else {
-            $('#reservation-sent').css('display', 'flex');
+        if (!hasError) {
+            $.ajax({
+                method: "POST",
+                url: 'mail.php',
+                data: 'count=' + count.val() + '&name=' + name.val() + '&phone=' + phone.val(),
+                success: () => {
+                    $('#reservation-sent').css('display', 'flex');
+                },
+                error: () => {
+                    alert('Ошибка бронирования. Свяжитесь, пожалуйста, по номеру телефона.');
+                }
+            });
         }
-
-        // if (!hasError) {
-        //     $.ajax({
-        //         method: "POST",
-        //         url: 'mail.php',
-        //         data: 'count=' + count.val() + '&name=' + name.val() + '&phone=' + phone.val(),
-        //         success: () => {
-        //             $('#reservation-sent').css('display', 'flex');
-        //         },
-        //         error: () => {
-        //             alert('Ошибка бронирования. Свяжитесь, пожалуйста, по номеру телефона.');
-        //         }
-        //     });
-        // }
     });
 
     $('#burger').click(() => {
         $('#burger-menu').css('display', 'block');
     });
 
-    $('#menu-cancel-close, #burger-menu').click((e) => {
-        if (e.target.id === 'menu-cancel-close' || e.target.id === 'burger-menu') {
+    $('#menu-cancel-close, #burger-menu, .menu-element').click((e) => {
+        if (e.target.id === 'menu-cancel-close' || e.target.id === 'burger-menu' || e.target.className === 'menu-element') {
             $('#burger-menu').hide();
         }
     });

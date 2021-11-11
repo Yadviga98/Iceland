@@ -1,7 +1,3 @@
-@media screen and (min-width: 1921px) {
-
-}
-
 /*1131 - 1340*/
 @media screen and (max-width: 1340px) {
     #main {
@@ -47,9 +43,12 @@
 
     #reasons-container #reasons #reason-one,
     #reasons-container #reasons #reason-two,
-    #reasons-container #reasons #reason-four,
-    #reasons-container #reasons #reason-three {
+    #reasons-container #reasons #reason-four {
         width: 185px;
+    }
+
+    #reasons-container #reasons #reason-three {
+        width: 200px;
     }
 
     #photo-gallery #photo-container .photos .block-2 .second-pic,
@@ -146,18 +145,13 @@
     }
 
     #program .slick-prev {
-        top: 340px;
-        right: 316px;
+        top: 325px;
+        left: 455px;
     }
 
     #program .slick-next {
-        top: 340px;
-        right: 246px;
-    }
-
-    #program-block #program .program .btn-border,
-    #program-block #program .program .document {
-        margin-top: 40px;
+        top: 325px;
+        left: 525px;
     }
 
     #program #program-container .program .program-text .data {
@@ -165,7 +159,9 @@
     }
 
     #program #program-container .program .program-text {
-        width: 350px;
+        margin-left: 100px;
+        width: auto;
+        height: 405px;
     }
 
     #program #program-container .white-block {
@@ -196,10 +192,6 @@
         margin-bottom: 30px;
     }
 
-    #reviews #reviews-container .review .btn-border {
-        margin-top: 70px;
-    }
-
     #photo-gallery #photo-container {
         display: none;
     }
@@ -208,12 +200,18 @@
         display: block;
     }
 
+    #photo-gallery .slick-dots {
+        bottom: -40px;
+    }
+
     #photo-gallery .slick-prev {
-        right: calc(50% + 130px);
+        right: calc(50% + 100px);
+        bottom: -47px;
     }
 
     #photo-gallery .slick-next {
-        right: calc(50% - 152px);
+        right: calc(50% - 120px);
+        bottom: -47px;
     }
 
     #reasons-container #reasons {
@@ -311,8 +309,8 @@
         margin-left: -70px;
     }
 
-    #uniq-places #uniq-container #laguna #laguna-text {
-        width: 290px;
+    #program {
+        margin: 0 auto 20px auto;
     }
 
     #program #program-container .program .white-block {
@@ -327,17 +325,38 @@
         margin-left: 45px;
     }
 
+    #program-block #program .program .document .document-text,
+    #program #program-container .program .program-text .text,
+    #program-block #reviews #reviews-container .review .text {
+        font-size: 13px;
+    }
+
+    #program #program-container .program .program-text .title,
+    #program #program-container .program .program-text .data {
+        font-size: 16px;
+        margin-bottom: 10px;
+    }
+
+    #program #program-container .program .program-text {
+        height: auto;
+    }
+
+    #program-block #program .program .document {
+        margin-left: auto;
+    }
+
+    #program .slick-prev {
+        top: 250px;
+        left: 345px;
+    }
+
+    #program .slick-next {
+        top: 250px;
+        left: 415px;
+    }
+
     #video-block, #video-container {
         height: 500px;
-    }
-
-    #program {
-        margin: 0 auto 100px auto;
-    }
-
-    #reviews #reviews-container .review .review-image img {
-        width: 260px;
-        height: 260px;
     }
 
     #reviews-container {
@@ -348,15 +367,20 @@
         width: 428px;
     }
 
+    #program-block #reviews #reviews-container .review .reviews-text {
+        width: auto;
+        padding-right: 20px;
+    }
+
     #reasons-container #reasons #reason-one .number-circle,
     #reasons-container #reasons #reason-three .number-circle {
-        bottom: calc(50% - 70px);
+        bottom: calc(50% - 50px);
         right: calc(50% + 110px);
     }
 
     #reasons-container #reasons #reason-two .number-circle,
     #reasons-container #reasons #reason-four .number-circle {
-        bottom: calc(50% + 30px);
+        bottom: calc(50% + 50px);
         right: calc(50% - 150px);
     }
 }
@@ -389,6 +413,11 @@
     #definition, #uniq-places #uniq-container {
         flex-direction: column;
         align-items: center;
+        text-align: center;
+    }
+
+    #uniq-places #uniq-container #laguna {
+        width: auto;
     }
 
     #about #definition #definition-text,
@@ -419,14 +448,14 @@
 
     #reasons-container #reasons #reason-one .number-circle,
     #reasons-container #reasons #reason-three .number-circle {
-        bottom: calc(50% - 100px);
+        bottom: calc(50% - 112px);
         right: calc(50% + 110px);
     }
 
     #reasons-container #reasons #reason-two .number-circle,
     #reasons-container #reasons #reason-four .number-circle {
-        bottom: calc(50% + 63px);
-        right: calc(50% + 80px);
+        bottom: calc(50% + 70px);
+        right: calc(50% + 65px);
     }
 
     #reasons-container #reasons #reason-two {
@@ -446,6 +475,7 @@
     #uniq-places #uniq-container #laguna {
         display: flex;
         flex-direction: column;
+        align-items: center;
     }
 
     #uniq-places #uniq-container #map #map-name {
@@ -462,52 +492,95 @@
         align-items: center;
         position: relative;
         flex-direction: column;
+        text-align: center;
     }
 
-    #program-block #program #program-container .program .day-program {
+    #program-block {
+        padding-top: 100px;
+    }
+
+    #program {
+        margin: 0 auto 340px auto;
+    }
+
+    #program #program-container .program .program-text .text {
+        font-size: 14px;
+    }
+
+    #program-block #program .program .document .document-text {
+        font-size: 16px;
+    }
+
+    #program #program-container .program .program-text .data {
+        font-size: 20px;
+        margin-bottom: 40px;
+    }
+
+    #program #program-container .program .program-text {
+        margin-left: 0;
+        height: 620px;
+        align-items: center;
+        text-align: center;
+    }
+
+    #program-block #program .program .document {
+        margin-left: 0;
+    }
+
+    #program #program-container .program .program-text .title {
+        font-size: 20px;
         margin-bottom: 325px;
     }
 
     #program-block #program #program-container .program .white-block {
         position: absolute;
-        top: 115px;
-        right: calc(50% - 71px);
+        top: 105px;
+        right: calc(50% - 98px);
     }
 
     #program .slick-prev {
         top: unset;
-        bottom: 68px;
+        bottom: 50px;
         right: unset;
-        left: calc(50% - 161px);
+        left: calc(50% - 55px);
     }
 
     #program .slick-next {
         top: unset;
-        bottom: 68px;
+        bottom: 50px;
         right: unset;
-        left: calc(50% - 92px);
+        left: calc(50% + 15px);
     }
 
     #program-block #reviews .review .review-person {
-        margin-bottom: 300px;
+        margin-bottom: 380px;
+    }
+
+    #program-block #reviews #reviews-container .review .reviews-text {
+        padding-right: 0;
+    }
+
+    #reviews #reviews-container .review .review-image img {
+        width: 280px;
+        height: 280px;
     }
 
     #program-block #reviews .review .review-image {
         position: absolute;
-        top: 250px;
-        right: calc(50% - 130px);
+        top: 230px;
+        right: calc(50% - 140px);
     }
 
     #reviews .slick-prev {
         top: 613px;
         left: unset;
-        right: calc(50% + 145px);
+        right: calc(50% + 37px);
     }
 
     #reviews .slick-next {
         top: 613px;
         left: unset;
-        right: calc(50% + 92px);
+        right: calc(50% - 23px);
     }
 
     #titles-mobile .trip-line .places {
@@ -543,36 +616,44 @@
         width: auto;
     }
 
+    #reasons-container #reasons .text {
+        font-size: 11px;
+    }
+
+    #reasons-container #reasons .title {
+        margin-bottom: 10px;
+    }
+
     #reasons-container #reasons #reason-one,
     #reasons-container #reasons #reason-two,
     #reasons-container #reasons #reason-four,
     #reasons-container #reasons #reason-three {
-        width: 250px;
+        width: 220px;
     }
 
     #reasons-container #reasons #reason-one {
-        top: 15px;
+        top: 105px;
         left: calc(50% - 185px);
     }
 
     #reasons-container #reasons #reason-two {
-        top: 220px;
-        left: calc(50% - 85px);
+        top: 270px;
+        left: calc(50% - 70px);
     }
 
     #reasons-container #reasons #reason-three {
-        top: 361px;
-        left: calc(50% - 76px);
+        top: 425px;
+        left: calc(50% - 43px);
     }
 
     #reasons-container #reasons #reason-four {
-        top: 550px;
+        top: 570px;
         left: calc(50% - 200px);
     }
 
     #reasons-container #reasons #reason-one .number-circle {
-        bottom: calc(50% - 150px);
-        right: calc(50% - 20px);
+        bottom: calc(50% - 125px);
+        right: calc(50% - 35px);
     }
 
     #reasons-container #reasons #reason-two .number-circle {
@@ -581,17 +662,17 @@
     }
 
     #reasons-container #reasons #reason-three .number-circle {
-        bottom: calc(50% - 140px);
+        bottom: calc(50% - 125px);
         right: calc(50% - 64px);
     }
 
     #reasons-container #reasons #reason-four .number-circle {
-        bottom: calc(50% + 88px);
+        bottom: calc(50% + 60px);
         right: calc(50% - 31px);
     }
 
     #about #reasons-container .reasons-title {
-        margin-bottom: 50px;
+        margin-bottom: 10px;
     }
 
     #reasons-container {
@@ -599,8 +680,17 @@
         margin-bottom: 140px;
     }
 
-    #uniq-places #uniq-container #laguna {
-        width: auto;
+    #program #program-container .program .program-text {
+        height: 660px;
+    }
+
+    #program .slick-prev,
+    #program .slick-next {
+        bottom: 40px;
+    }
+
+    #program {
+        margin: 0 auto 400px auto;
     }
 
     #about #definition #definition-text,
@@ -620,6 +710,10 @@
 
     #reviews-container {
         padding: 40px 13px;
+    }
+
+    #program-block #reviews .review .review-person {
+        margin-bottom: 350px;
     }
 
     #reviews .slick-prev,
@@ -646,6 +740,21 @@
         font-size: 15px;
     }
 
+    #definition, #uniq-places #uniq-container {
+        text-align: unset;
+    }
+
+    #about #definition #definition-text .title {
+        left: 20px;
+    }
+
+    #about #definition #definition-text,
+    #uniq-places #uniq-container #laguna #laguna-text,
+    #program-block #reviews #reviews-container .review .reviews-text,
+    #program #program-container .program .program-text {
+        width: auto;
+    }
+
     #video-block #video .video-text {
         font-size: 13px;
     }
@@ -663,22 +772,28 @@
         width: 269px;
     }
 
-    #about #definition #definition-text,
-    #uniq-places #uniq-container #laguna #laguna-text,
-    #program-block #reviews #reviews-container .review .reviews-text,
-    #program #program-container .program .program-text {
-        width: 285px;
+    #uniq-places #uniq-container #laguna {
+        align-items: flex-end;
     }
 
     #program #program-container .program .program-text .text {
-        height: 250px;
+        height: 180px;
     }
 
-    #definition, #uniq-places #uniq-container,
-    #program #program-container .program,
-    #reviews #reviews-container .review {
+    #definition,
+    #reviews #reviews-container .review,
+    #program #program-container .program .program-text {
         align-items: flex-start;
+        text-align: start;
         position: relative;
+    }
+
+    #program-block #program #program-container .program .white-block {
+        left: 0;
+    }
+
+    #program #program-container .program .program-text {
+        height: 700px;
     }
 
     #uniq-places .title.title-uniq {
@@ -690,95 +805,70 @@
         width: 210px;
     }
 
-    #program-block #program #program-container .program .white-block {
-        left: 25px;
-    }
-
-    #program-block #program .program .btn-border, #program-block #program .program .document {
+    #program-block #program .program .document {
         margin-top: 30px;
     }
 
     #program .slick-prev {
         top: unset;
-        bottom: 58px;
+        bottom: 65px;
         right: unset;
-        left: 15px;
+        left: 0;
     }
 
     #program .slick-next {
         top: unset;
-        bottom: 58px;
+        bottom: 65px;
         right: unset;
-        left: 84px;
+        left: 70px;
+    }
+
+    #program-block #reviews .review .review-person {
+        margin-bottom: 400px;
     }
 
     #program-block #reviews .reviews-title {
         margin-bottom: 40px;
     }
 
-    #reviews #reviews-container .review .btn-border {
-        margin-top: 355px;
-    }
-
     #program-block #reviews .review .review-image {
-        top: 300px;
+        top: 265px;
+        left: 0;
     }
 
     #reviews .slick-next {
-        top: 694px;
-        right: unset;
-        left: 81px;
+        top: 650px;
+        left: 70px;
     }
 
     #reviews .slick-prev {
-        top: 694px;
-        right: unset;
-        left: 27px;
+        top: 650px;
+        left: 13px;
     }
 
     #reservation-sent #reservation {
         width: 290px;
     }
 
-    #reasons-container #reasons #reason-one,
-    #reasons-container #reasons #reason-four {
-        width: 170px;
-    }
-
-    #reasons-container #reasons #reason-two,
-    #reasons-container #reasons #reason-three {
-        width: 260px;
-    }
-
     #reasons-container #reasons #reason-one {
-        top: -22px;
-        left: calc(50% - 165px);
+        top: 70px;
+        left: calc(50% - 170px);
     }
 
     #reasons-container #reasons #reason-two {
-        top: 190px;
-        left: calc(50% - 85px);
-    }
-
-    #reasons-container #reasons #reason-two .number-circle {
-        bottom: calc(50% + 73px);
-        right: calc(50% - 44px);
-    }
-
-    #reasons-container #reasons #reason-four .number-circle {
-        bottom: calc(50% + 113px);
-        right: calc(50% - 23px);
-    }
-
-    #reasons-container #reasons #reason-four {
-        top: 476px;
-        left: calc(50% - 176px);
+        top: 245px;
+        left: calc(50% - 65px);
     }
 
     #reasons-container #reasons #reason-three {
-        top: 329px;
-        left: calc(50% - 76px);
+        top: 395px;
     }
+
+    #reasons-container #reasons #reason-four {
+        top: 550px;
+        left: calc(50% - 175px);
+    }
+
 }
 
 /*320 - 375*/
@@ -788,20 +878,26 @@
         width: 290px;
     }
 
-    #program .slick-prev {
-        left: calc(50% - 126px);
+    #program {
+        margin: 0 auto 450px auto;
     }
 
-    #program .slick-next {
-        left: calc(50% - 57px);
+    #program #program-container .program .program-text {
+        height: 755px;
+    }
+
+    #program-block #reviews .review .review-image {
+        top: 300px;
     }
 
     #reviews .slick-prev {
         right: calc(50% + 93px);
+        top: 680px;
     }
 
     #reviews .slick-next {
         right: calc(50% + 39px);
+        top: 680px;
     }
 
     #definition #definition-image img {
@@ -839,6 +935,7 @@
     #reasons-container {
         background: url(../img/vertical_dotted_line.png) no-repeat;
         background-position: center top 70px;
+        /*background-size: cover;*/
         height: auto;
         margin-bottom: 50px;
     }
@@ -869,13 +966,28 @@
         left: 0;
     }
 
-    #reasons-container #reasons #reason-one,
-    #reasons-container #reasons #reason-three {
-        margin-bottom: 23px;
+    #reasons-container #reasons .text {
+        font-size: 14px;
+    }
+
+    #reasons-container #reasons .title {
+        margin-bottom: 18px;
+    }
+
+    #reasons-container #reasons #reason-one {
+        margin-top: 35px;
     }
 
     #reasons-container #reasons #reason-two {
-        margin-bottom: 14px;
+        margin-top: 25px;
+    }
+
+    #reasons-container #reasons #reason-three {
+        margin-top: 15px;
+    }
+
+    #reasons-container #reasons #reason-four {
+        margin-top: 30px;
     }
 
     #uniq-places #uniq-container #map {
